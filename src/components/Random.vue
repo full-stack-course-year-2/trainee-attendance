@@ -11,7 +11,7 @@
       </div>
     </v-card-text>
     <v-card-actions class="mt-8">
-      <v-btn class="primary" @click="select"> Soru Sor </v-btn>
+      <v-btn class="primary" @click="select"> Soru Sor __</v-btn>
     </v-card-actions>
   </v-card>
 </template>
