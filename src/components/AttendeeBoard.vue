@@ -41,7 +41,7 @@ export default {
         { name: "26-Yavuz" },
         { name: "27-Ercan" },
       ],
-      selected: "",
+      selected: [],
     };
   },
   methods: {
