@@ -42,6 +42,7 @@ export default {
         { name: "27-Ercan" },
       ],
       selected: [],
+      answered: [],
     };
   },
   methods: {
