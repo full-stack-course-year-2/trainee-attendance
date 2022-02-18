@@ -50,6 +50,9 @@ export default {
       this.selected = payload;
     },
   },
+  created() {
+    console.log("created");
+  },
 };
 </script>
 
