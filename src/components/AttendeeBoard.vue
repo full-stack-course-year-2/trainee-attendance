@@ -1,11 +1,19 @@
 <template>
   <div class="mt-16">
     <random :attendees="attendees" :selected="selected" @select="onSelect" />
+    <div class="selectedPersons">
+        <ul class="list-group">
+            <li class="list-group-item" 
+                :key="selectedPerson" 
+                v-for="selectedPerson in allSelected">{{ selectedPerson }}
+            </li>
+        </ul>
+    </div>
   </div>
 </template>
 
 <script>
-import Random from "./Random.vue";
+import Random from "./RandomAttendees.vue";
 export default {
   components: {
     Random,
@@ -42,11 +50,13 @@ export default {
       ],
       selected: [],
       answered: [],
+      allSelected: []
     };
   },
   methods: {
     onSelect(payload) {
       this.selected = payload;
+      this.allSelected.push(this.selected);
     },
   },
 };
@@ -56,5 +66,11 @@ export default {
 .card {
   margin: 0px auto;
   width: 300px;
+}
+.selectedPersons {
+  float: left;
+  margin-left: 80px;
+  width: 200px;
+  font-size: 20px;
 }
 </style>

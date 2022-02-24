@@ -40,7 +40,6 @@ export default {
       if (val !== 0) {
         const selected = this.attendees[val].name;
         this.$emit("select", selected);
-        console.log(this.attendees);
       }
     },
   },
