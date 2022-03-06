@@ -1,12 +1,16 @@
 <template>
-  <attendee-board />
+  <div>
+    <attendee-board />
+  </div>
 </template>
 
 <script>
 import AttendeeBoard from "../components/AttendeeBoard.vue";
 export default {
-  name: "index",
+  name: "indexVue",
 
-  components: { AttendeeBoard },
+  components: { 
+    AttendeeBoard, 
+  },
 };
 </script>
